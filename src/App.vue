@@ -55,7 +55,7 @@ const getPaymentName = (id: number) => paymentsBybit.find((payment) => payment.i
 
 const fetchBybitSell = async () => {
   try {
-    const { data } = await axios.get('http://localhost:3000/bybit-sell')
+    const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/bybit/sell`)
 
     table.rows.push(
       ...data.result.items.map((item) => {
