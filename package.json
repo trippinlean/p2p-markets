@@ -3,13 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://trippinlean.github.io/p2p-markets/",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "build-only",
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.6.7",
